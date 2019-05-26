@@ -31,8 +31,8 @@ body {
 
 #resetIcon {
   position: absolute;
-  height: 27.4vh;
-  width: 27.4vh;
-  top: calc(50% - 13.7vh);
-  left: calc(50% - 13.7vh);
+  height: 16vh;
+  width: 16vh;
+  top: calc(50% - 8vh);
+  left: calc(50% - 8vh);
 }
