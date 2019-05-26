@@ -26,6 +26,14 @@ self.addEventListener('message', (event) => {
  */
 self.__precacheManifest = [
   {
+    "url": "css/landscape.css",
+    "revision": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
+    "url": "css/portrait.css",
+    "revision": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  {
     "url": "css/styles.css",
     "revision": "418b6ddefc13c857a2ee3f68d2b98c28"
   },
@@ -63,7 +71,7 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
-    "revision": "cbe9e7c4933c6a306a9c4f607827b4ef"
+    "revision": "ac1bf312cd04853f31c355a600b727f2"
   },
   {
     "url": "js/app.js",
@@ -75,7 +83,7 @@ self.__precacheManifest = [
   },
   {
     "url": "package-lock.json",
-    "revision": "8f70fa8000e12e6f987adf00a00a94fc"
+    "revision": "58fc0fda1814f2be6fc2d35a3f35c864"
   },
   {
     "url": "res/04M04_Logo_Round.png",
