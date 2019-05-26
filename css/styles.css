@@ -1,72 +1,38 @@
-* {
+* {  
   box-sizing: border-box;
+  margin: 0;
   color: whitesmoke;
 }
 
+body, html { height:100%; padding:0; margin:0;}
+
 body {
-  margin: 0;
   background-color: black;
 }
 
-/* Style the header */
-.header {
-  background-color: #f1f1f1;
-  padding: 20px;
-  text-align: center;
+.column {
+  float: left;
+  /* padding: 10px; */
+  height: 100%;
+  width: 50%;
+  /* width: 50vw;  */
+  /* width: calc(var(--vw, 1vw) * 50); */
 }
 
 .control {
-  border: 4px solid black;
+  height: 100%;
+  border: 10px solid black;
   border-radius: 25px;
   text-align: center;
   background-color: gray;
   font-weight: bold;
-  font-size: calc(1em + 14vh);
-  height: 33vh; /* Fallback for browsers that do not support Custom Properties */
-  height: calc(var(--vh, 1vh) * 33);
-}
-
-/* Create three unequal columns that floats next to each other */
-.column {
-  float: left;
-  padding: 10px;
-  height: 100%;
-  width: 50%;
-  width: 50vw; /* Fallback for browsers that do not support Custom Properties */
-  width: calc(var(--vw, 1vw) * 50);
-}
-
-/* Left and right column */
-.column.side {
-  width: 25%;
-}
-
-/* Middle column */
-.column.middle {
-  width: 50%;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column.side,
-  .column.middle {
-    width: 100%;
-  }
+  font-size: 27.4vh;
 }
 
 #resetIcon {
-  height: 33vh; /* Fallback for browsers that do not support Custom Properties */
-  height: calc(var(--vh, 1vh) * (100% / 3));
-  width: 33vh; /* Fallback for browsers that do not support Custom Properties */
-  height: calc(var(--vh, 1vh) * (100% / 3));
   position: absolute;
-  top: calc(50% - height * 0.5);
-  left: calc(50% - header * 0.5);
+  height: 27.4vh;
+  width: 27.4vh;
+  top: calc(50% - 13.7vh);
+  left: calc(50% - 13.7vh);
 }
