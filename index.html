@@ -2,45 +2,6 @@
 <html lang="de-AT">
 
 <head>
-    <title>CSS Website Layout</title>
-    <meta charset="utf-8">    
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="images/icons/icon-96x96.png">
-    <link rel="manifest" href="manifest.json">
-    <link rel="stylesheet" href="css/styles.css">
-    <!-- <link rel="stylesheet" media="(max-width: 640px)" href="css/max-640px.css">
-    <link rel="stylesheet" media="(min-width: 640px)" href="css/min-640px.css"> -->
-    <link rel="stylesheet" media="(orientation: portrait)" href="css/portrait.css">
-    <link rel="stylesheet" media="(orientation: landscape)" href="css/landscape.css">
-</head>
-
-<body>    
-    <div class="row">
-        <div class="column">
-            <div onclick="LeftLifeUp()" id="plusElement1" class="control">+</div>
-            <div id="lifeElement1" class="control">20</div>
-            <div onclick="LeftLifeDown()" id="minusElement1" class="control">-</div>
-        </div>
-
-        <div id="reset" class="element">
-            <img onclick="ResetLife()" id="resetIcon" src="images/controlls/WastelandIcon.png" alt="Reset Button">
-        </div>
-
-        <div class="column">
-            <div onclick="RightLifeUp()" id="plusElement2" class="control">+</div>
-            <div id="lifeElement2" class="control">20</div>
-            <div onclick="RightLifeDown()" id="minusElement2" class="control">-</div>
-        </div>
-    </div>
-    <script src="js/app.js"></script>
-    <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener("load", () => {
-                navigator.serviceWorker.register("sw.js");
-            });
-        }
-    </script>
-    
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137806656-2"></script>
     <script>
@@ -50,6 +11,48 @@
 
     gtag('config', 'UA-137806656-2');
     </script>
+
+    <title>CSS Website Layout</title>
+    <meta charset="utf-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="images/icons/icon-96x96.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <link rel="stylesheet" media="(max-width: 640px)" href="css/max-640px.css">
+    <link rel="stylesheet" media="(min-width: 640px)" href="css/min-640px.css"> -->
+    <!-- <link rel="stylesheet" media="(orientation: portrait)" href="css/portrait.css">
+    <link rel="stylesheet" media="(orientation: landscape)" href="css/landscape.css"> -->
+    <link rel="stylesheet" href="css/standalone">
+</head>
+
+<body>    
+    <div class="row">
+        <div class="column">
+            <div onclick="LeftLifeUp()" id="plusElement1" class="control controlanimation">+</div>
+            <div id="lifeElement1" class="control">20</div>
+            <div onclick="LeftLifeDown()" id="minusElement1" class="control controlanimation">-</div>
+        </div>
+
+        <div id="reset" class="element">
+            <img onclick="ResetLife()" id="resetIcon" src="images/controlls/WastelandIcon.png" alt="Reset Button">
+        </div>
+
+        <div class="column">
+            <div onclick="RightLifeUp()" id="plusElement2" class="control controlanimation">+</div>
+            <div id="lifeElement2" class="control">20</div>
+            <div onclick="RightLifeDown()" id="minusElement2" class="control controlanimation">-</div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener("load", () => {
+                navigator.serviceWorker.register("sw.js");
+            });
+        }
+    </script>
+
     <script src="js/webInstallPrompt.js"></script>
 </body>
 

@@ -29,10 +29,32 @@ body {
   font-size: 27.4vh;
 }
 
+.controlanimation{
+  transition: all 0.3s ease;
+}
+
+.controlanimation:hover {
+  background-color: #181818;
+}
+
+.controlanimation:active {
+  background-color: whitesmoke;
+}
+
 #resetIcon {
   position: absolute;
+  border-radius: 50%;
   height: 16vh;
   width: 16vh;
   top: calc(50% - 8vh);
   left: calc(50% - 8vh);
+  transition: all 0.3s ease;
+}
+
+#resetIcon:hover {
+  box-shadow: 0 5px 10px #181818;
+}
+
+#resetIcon:active {
+  box-shadow: 0 5px 10px whitesmoke;
 }
